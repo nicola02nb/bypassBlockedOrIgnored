@@ -4,7 +4,6 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-import { Devs } from "@utils/constants";
 import definePlugin from "@utils/types";
 import { findByPropsLazy } from "@webpack";
 
@@ -16,7 +15,10 @@ const { getBlockedUsersForVoiceChannel, getIgnoredUsersForVoiceChannel } = findB
 export default definePlugin({
     name: "BypassBlockedOrIgnored",
     description: "Bypass the blocked or ignored user modal if is present in voice channels.",
-    authors: [Devs.nicola02nb],
+    authors: [{
+        name: "nicola02nb",
+        id: 257900031351193600n
+    }],
     settings,
     patches: [
         {
